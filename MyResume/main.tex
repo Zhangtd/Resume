@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{hyperref}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Suwei} % Your first name
+\familyname{Zhang} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{163 Xianlin Avenue, Qixia District}{Nanjing, China 210023}
+%\mobile{(+86) 15695293256}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{zhangtd95@outlook.com}
+\homepage{https://github.com/Zhangtd}{Github/Zhangtd} % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{photo} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Seeking a Job Opportunity or a PhD Placement by the 10th of September - 23 years old}
+%
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2017.9-Now}{Computer Technology - Master Candidate}{Nanjing University}{Nanjing}{China}{Research interests: Recommender System, Machine Learning, Deep Learning.\\
+I will graduate in June 2020.}  % Arguments not required can be left empty
+
+\cventry{2013-2017.6}{Computer Science and Technology - Bachelor}{UESTC}{Chengdu}{China}{}
+
+%----------------------------------------------------------------------------------------
+%	SELECTED PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Selected Projects}
+
+\cventry{[1]}{MaCon (Memory Augmented Co-Attention model)}{}{}{\href{https://github.com/Zhangtd/MaCon}{\color{blue}[Code]}}
+{A hashtag recommendation method for social media posts with text and image.\\
+MaCon takes a multi-modal post composed of a piece of text and an image as well as the user id as inputs. It can recommend hashtags not only properly reflect the content of the post but also the personality of certain user.} 
+
+\cventry{[2]}{A set of reproduced models}{}{}{\href{https://github.com/Zhangtd/Models-reproducing}{\color{blue}[Code]}}
+{Some deep learning models proposed by others and implemented by myself:\\
+Hashtag Recommendation for Multimodal Microblog Using Co-Attention Networks, IJCAI 2017.\\
+Hashtag recommendation with topical attention-based LSTM, COLING 2016.\\
+Hashtag Recommendation Using Attention-Based Convolutional Neural Network, IJCAI 2016.\\
+Hierarchical Question-Image Co-Attention for Visual Question Answering, NIPS 2016.
+}
+
+\cventry{[3]}{A web application: Presentation Platform for a Bug Locator Algorithm}{}{}{\href{https://github.com/Tangworld/buglocator}{\color{blue}[Code]}}
+{A web application implemented via Python Django.\\
+It provides services like develop team activity summary, team member contribution visualization and comparison, bug report management and bug localization et al.\\
+My contributions cover functionality design and implementation, logic design, front end design and implementation, back end program implementation. 
+}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\cvitem{[1]}{Hashtag Recommendation for Photo Sharing Services.
+\textbf{Suwei Zhang}, Yuan Yao, Feng Xu, Hanghang Tong, Xiaohui Yan, and Jian Lu.
+AAAI 2019. \href{http://cs.nju.edu.cn/yuanyao/static/aaai2019a.pdf}{\color{blue}[PDF]}}
+
+\cvitem{[2]}{An Integral Tag Recommendation Model for Textual Content.
+Shijie Tang, Yuan Yao, \textbf{Suwei Zhang}, Feng Xu, Tianxiao Gu, Hanghang Tong, Xiaohui Yan, and Jian Lu.
+AAAI 2019. \href{http://cs.nju.edu.cn/yuanyao/static/aaai2019b.pdf}{\color{blue}[PDF]}}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{CS Ability}{Python, C/C++, Keras, PyTorch, Django, Web Crawler.}
+\cvitem{Tools}{\LaTeX, MS Office, Linux, Git.}
+\cvitem{Language}{Native Chinese speaker with qualified knowledge of English .}
+
+
+%----------------------------------------------------------------------------------------
+%	Awards SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards \& Honors}
+%\begin{small}
+\cvitem{Master}{2nd Class Academic Scholarship.}
+\cvitem{Bachelor}{National Scholarship, National Encouragement Scholarship, Outstanding Graduate of UESTC.}
+%\end{small}
+
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
